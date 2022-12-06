@@ -1,0 +1,82 @@
+/*
+ How I went about the floating placeholder
+ https://thatemil.com/blog/2016/01/23/floating-label-no-js-pure-css/ + my modifications
+
+ This CSS isn't perfect and not tested yet. There are some edge cases to resolve likewise but I really do not want to use any javascript.
+*/
+
+.field {
+    display: flex;
+    flex-flow: column-reverse;
+    background: #F7F7F7;
+    border-radius: 8px;
+}
+
+label,
+input {
+    transition: all 0.3s;
+}
+
+.field>label {
+    position: relative;
+    bottom: 0.1rem;
+}
+
+
+.forminput {
+    padding: 9px 24px;
+    border: none;
+    background: #F7F7F7;
+    border-radius: 8px;
+    width: 100%;
+}
+
+.forminput+label {
+    font-size: 9px;
+    padding: 0 14px;
+}
+
+.forminput::placeholder {
+    color: #2E2E3A;
+}
+
+.forminput:focus {
+    outline: 0;
+    border: none;
+}
+
+
+::placeholder {
+    opacity: 0;
+}
+
+/**🤣 here is my magic*/
+.forminput:active::placeholder {
+    opacity: 1;
+    transition-delay: 1s;
+    transition-property: opacity;
+}
+
+/**kelvin's magic ends here*/
+
+.forminput:placeholder-shown+label {
+    /* [1] */
+    max-width: 66.66%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* |2] */
+    cursor: text;
+    bottom: 1rem;
+    /* [3 */
+    transform-origin: left bottom;
+    transform: translate(0, 2.125rem) scale(1.5);
+}
+
+forminput:not(:placeholder-shown)+label,
+forminput:focus+label {
+    transform: translate(0, 0) scale(1);
+    /* [1] */
+    cursor: pointer;
+    /* [2] */
+}

@@ -1,0 +1,27 @@
+.alert-template {
+    background-color: black;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.alert-template>.link {
+    margin: 20px 70px 0 auto;
+}
+
+.alert-template>.alert-main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.alert-main>div {
+    width: 480px;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}

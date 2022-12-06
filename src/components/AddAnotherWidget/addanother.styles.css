@@ -1,0 +1,8 @@
+.addanother {
+    border: 1.3px dashed #757272;
+    padding: 0.5rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}

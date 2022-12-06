@@ -1,0 +1,7 @@
+.readonly,
+.readonly:focus,
+.readonly:active {
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
