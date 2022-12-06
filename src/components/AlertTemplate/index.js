@@ -14,7 +14,7 @@ export function AlertTemplate ({
         <div className='alert-main'>
             <div>
                 <div>
-                    <img src={logo} width="28.37px" height="48px"/>
+                    <img src={logo} alt="" width="28.37px" height="48px"/>
                 </div>
                 <div>
                     {children}

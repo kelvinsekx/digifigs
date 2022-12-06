@@ -7,14 +7,3 @@ export const init = {
     price: '',
     qty: ''
 }
-
-export function reducer (action, payload){
-    switch (action.types) {
-        case '':
-            return ''
-            break;
-    
-        default:
-            break;
-    }
-}
