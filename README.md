@@ -1,6 +1,14 @@
-# Getting Started with Create React App
+# Getting Started
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+>If you are from digifigs and assessing this code, note that I didn't implement all the screens. I hope the code provides enough for you to make an assessment of how good a fit I am for the role. Peace!! 
+
+Most of the modules are built from scratch from me. Aside the incumbent Create React Packages, there is literally no package. This ensures low coupling and bluted files.
+
+I hope you enjoy reading this code as much as I enjoy writing them.
+
+Few blocks ahead: this code is only for desktop view. It is an assessment code, I couldn't do much.
 
 ## Available Scripts
 
@@ -16,8 +24,7 @@ You may also see any lint errors in the console.
 
 ### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+No test is written for this demo project unfortunately.
 
 ### `npm run build`
 
